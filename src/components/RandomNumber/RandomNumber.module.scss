@@ -1,0 +1,80 @@
+.RandomNumber {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    max-width: 350px;
+    max-height: 330px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #051128;
+    }
+    
+  .Results {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: left;
+    background: #212a3c;
+  }
+  
+  .RangeOfNumbers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+  
+    div:first-child {
+      margin-right: 20px;
+    }
+  
+    .WrapperInput {
+      box-sizing: border-box;
+    
+      label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+    
+      input {
+        width: 100%;
+        padding: 15px 20px;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #fff;
+        background: #212a3c;
+      }
+    }
+  }
+  
+  .ErrorValue {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: rgb(212, 7, 7);
+  }
+  
+  .Button {
+    width: 100%;
+    margin: 0;
+    padding: 15px 30px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    background: #0e254a;
+  
+    &:hover {
+      cursor: pointer;
+      background: #0a1d3b;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+    
