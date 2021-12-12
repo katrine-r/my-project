@@ -1,0 +1,68 @@
+.YourColorListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    margin: 10px;
+    color: #fff;
+  }
+  
+  .ListItem {
+    width: 80px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .WrapperColor {
+    span {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .ColorActive {
+    border: 2px solid #fff;
+  }
+  
+  .color1 {
+    background: #9253a1;
+  }
+  
+  .color2 {
+    background: #f063a4;
+  }
+  
+  .color3 {
+    background: #2dc5f4;
+  }
+  
+  .color4 {
+    background: #fcee21;
+  }
+  
+  .color5 {
+    background: #f16164;
+  }
+  
+  .color6 {
+    background: #70327e;
+  }
+  
+  .color7 {
+    background: #a42953;
+  }
+  
+  .color8 {
+    background: #0b6a88;
+  }
+  
+  .color9 {
+    background: #f89e4f;
+  }
+  
+  .color10 {
+    background: #ec015a;
+  }
