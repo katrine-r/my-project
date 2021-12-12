@@ -2,7 +2,12 @@ import React from "react";
 import classes from "./YourColorList.module.scss";
 import YourColorListItem from "./YourColorListItem/YourColorListItem";
 
-const YourColorList = ({ allColors, colorDefault, onPickColorHandler }) => {
+const YourColorList = ({ 
+  allColors, 
+  colorDefault, 
+  onPickColorHandler,
+  setTextCopied 
+}) => {
   return (
     <div className={classes.YourColorList}>
       <ul className={classes.List}>
@@ -15,6 +20,7 @@ const YourColorList = ({ allColors, colorDefault, onPickColorHandler }) => {
               colorRGB={color.colorRGB}
               colorDefault={colorDefault}
               onPickColorHandler={onPickColorHandler}
+              setTextCopied={setTextCopied}
             />
           );
         })}

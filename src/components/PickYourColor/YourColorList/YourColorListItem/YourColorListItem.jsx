@@ -1,12 +1,14 @@
 import React from "react";
 import classes from "./YourColorListItem.module.scss";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const YourColorListItem = ({
   id,
   colorHEX,
   colorRGB,
   colorDefault,
-  onPickColorHandler
+  onPickColorHandler,
+  setTextCopied,
 }) => {
   const colorItem = [classes.ListItem];
 
@@ -24,9 +26,20 @@ const YourColorListItem = ({
         className={colorItem.join(" ")}
         onClick={() => onPickColorHandler(id)}
       ></li>
+
       <div className={classes.WrapperColor}>
-        <span>{colorHEX}</span>
-        <span>{colorRGB}</span>
+        <CopyToClipboard
+          text={colorHEX}
+          onCopy={() => setTextCopied({ value: colorHEX, copied: true })}
+        >
+          <span>{colorHEX}</span>
+        </CopyToClipboard>
+        <CopyToClipboard
+          text={colorRGB}
+          onCopy={() => setTextCopied({ value: colorRGB, copied: true })}
+        >
+          <span>{colorRGB}</span>
+        </CopyToClipboard>
       </div>
     </div>
   );

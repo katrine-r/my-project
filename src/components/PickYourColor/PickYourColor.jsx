@@ -15,7 +15,9 @@ const ChooseYourColor = () => {
     { id: "color9", colorHEX: "#f89e4f", colorRGB: "(248, 158, 79)" },
     { id: "color10", colorHEX: "#ec015a", colorRGB: "(236, 1, 90)" }
   ]);
+
   const [colorDefault, setColorDefault] = useState("");
+  const [textCopied, setTextCopied] = useState({ value: "", copied: false });
   const pickColorBackground = [classes.PickYourColor];
 
   const onPickColorHandler = (id) => {
@@ -27,15 +29,23 @@ const ChooseYourColor = () => {
     pickColorBackground.push(classes[colorDefault]);
   }
   console.log(colorDefault);
+  console.log(textCopied);
 
   return (
     <div className={pickColorBackground.join(" ")}>
+      {textCopied.copied ? (
+        <span className={classes.PositionColorCopied}>
+          Copied: {textCopied.value}
+        </span>
+      ) : null}
       <h1>Pick Your Color</h1>
       <div className={classes.Wrapper}>
         <YourColorList
           allColors={allColors}
           colorDefault={colorDefault}
           onPickColorHandler={onPickColorHandler}
+          textCopied={textCopied}
+          setTextCopied={setTextCopied}
         />
       </div>
     </div>
