@@ -1,0 +1,74 @@
+.PickYourColor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    height: 100vh;
+    background: #333;    
+  }
+  
+  .Wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+  }  
+
+  .PositionColorCopied {
+    display: block;
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -150px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .color1 {
+    background: #9253a1;
+  }
+  
+  .color2 {
+    background: #f063a4;
+  }
+  
+  .color3 {
+    background: #2dc5f4;
+  }
+  
+  .color4 {
+    background: #fcee21;
+  }
+  
+  .color5 {
+    background: #f16164;
+  }
+  
+  .color6 {
+    background: #70327e;
+  }
+  
+  .color7 {
+    background: #a42953;
+  }
+  
+  .color8 {
+    background: #0b6a88;
+  }
+  
+  .color9 {
+    background: #f89e4f;
+  }
+  
+  .color10 {
+    background: #ec015a;
+  }
+ 
+  @media screen and (max-width: 767px) {
+    .Wrapper {
+      max-width: 360px;
+    } 
+  }
